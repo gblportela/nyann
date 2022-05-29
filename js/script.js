@@ -2,6 +2,8 @@ var canvas = document.querySelector('canvas')
 var sec = document.querySelector('section')
 var placar = document.getElementById('placar')
 let buttonsMove = document.getElementsByClassName('button-move')
+let fs = document.getElementById('fullscreen')
+let body = document.body
 let endScreen
 canvas.width = sec.clientWidth
 canvas.height = sec.clientHeight
@@ -11,8 +13,36 @@ window.onresize = () => {
    canvas.height = document.body.clientHeight
 }
 
-var c = canvas.getContext('2d')
+function fullScreen(){
+   if(fs.getAttribute("fs") == 'false'){
+      openFullscreen()
+      fs.setAttribute('fs', 'true')
+   } else{
+      closeFullscreen()
+      fs.setAttribute('fs', 'false')
+   }
+}
+function openFullscreen() {
+  if (body.requestFullscreen) {
+    body.requestFullscreen();
+  } else if (body.webkitRequestFullscreen) { /* Safari */
+    body.webkitRequestFullscreen();
+  } else if (body.msRequestFullscreen) { /* IE11 */
+    body.msRequestFullscreen();
+  }
+}
 
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+      document.exitFullscreen()
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+
+var c = canvas.getContext('2d')
 var imgCat = new Image()
 imgCat.src = 'imagens/cat.png'
 

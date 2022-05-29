@@ -19,9 +19,15 @@ section{
     box-shadow: 0px 2px 10px black;
     
 }
-div#div{
-    
-    
+div#fullscreen{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: rgb(14, 65, 88);
+    color: whitesmoke;
+    border-style: outset;
+    user-select: none
 }
 div#placar{
     text-align: center;
@@ -88,8 +94,6 @@ div#controls{
     right: 20px;
     width: 60px;
     height: 60px;
-    text-align: center;
-    vertical-align: middle;
     border-radius: 50%;
     background-color: rgb(14, 65, 88);
     color: whitesmoke;
