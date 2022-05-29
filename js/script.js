@@ -16,7 +16,7 @@ window.onresize = () => {
 var c = canvas.getContext('2d')
 
 var imgCat = new Image()
-imgCat.src = '_imagens/cat.png'
+imgCat.src = 'imagens/cat.png'
 
 function is_touch_device() {  
     try {  
@@ -177,7 +177,7 @@ function makeBullet(){
    bala.push(new Bullet(papa.x + papa.papaWidth / 2, papa.y + papa.papaHeight / 2))
 }
 var imgBullet = new Image();
-imgBullet.src = '_imagens/spell.png';
+imgBullet.src = 'imagens/spell.png';
 
 let rastrobala = [];
 class RastroBala {
@@ -433,7 +433,7 @@ function makeBall(){
          var y = getRandom(canvas.height - 60, 60);
          var dx = getRandom(-10,-14);
          var dy = getRandom(1,-1);
-         let meteorArray = ['_imagens/1.png','_imagens/2.png','_imagens/3.png','_imagens/4.png','_imagens/5.png','_imagens/6.png','_imagens/7.png','_imagens/8.png','_imagens/9.png','_imagens/10.png','_imagens/11.png','_imagens/12.png','_imagens/13.png','_imagens/14.png','_imagens/15.png'];
+         let meteorArray = ['imagens/1.png','imagens/2.png','imagens/3.png','imagens/4.png','imagens/5.png','imagens/6.png','imagens/7.png','imagens/8.png','imagens/9.png','imagens/10.png','imagens/11.png','imagens/12.png','imagens/13.png','imagens/14.png','imagens/15.png'];
          var imgMeteor = new Image();
 
          imgMeteor.src = meteorArray[getRandom(6, 0)]
