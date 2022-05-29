@@ -1,5 +1,3 @@
-window.onload = function(){
-
 var canvas = document.querySelector('canvas')
 var sec = document.querySelector('section')
 var placar = document.getElementById('placar')
@@ -562,4 +560,3 @@ makeBall();
 makeRastro();
 animate();
 
-}
