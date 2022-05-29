@@ -32,7 +32,7 @@ if(!is_touch_device()){
 
 let pontuacao = 0
 var perdeu = 0;
-var vidas = 10;
+var vidas = 11;
 var v = false;
 var tocou = false;
 function getRandom(max, min) {
@@ -335,7 +335,7 @@ class rastroNyan{
 }
 function makeNyan(){
    var y = getRandom(canvas.height - 30, 30);
-   let naynArrayImg = ['_imagens/_nyan/nyan.png'];
+   let naynArrayImg = ['imagens/_nyan/nyan.png'];
    var imgNyan = new Image();
    imgNyan.src = naynArrayImg[Math.floor(getRandom(0,0))]
    nyan.push(new Nyan(y, imgNyan));
