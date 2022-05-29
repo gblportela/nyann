@@ -335,9 +335,8 @@ class rastroNyan{
 }
 function makeNyan(){
    var y = getRandom(canvas.height - 30, 30);
-   let naynArrayImg = ['./imagens/nyan/nyan.png'];
    var imgNyan = new Image();
-   imgNyan.src = naynArrayImg[0]
+   imgNyan.src = 'imagens/nyan/nyan.png'
    nyan.push(new Nyan(y, imgNyan));
 }
 class Nyan{
