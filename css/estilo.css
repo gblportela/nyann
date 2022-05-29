@@ -68,6 +68,7 @@ div#controls{
     position: fixed;
     left: 20px;
     bottom: 20px;
+    overflow: visible;
 }
 #button-up{
     grid-area: b-up;
