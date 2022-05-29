@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+</head>
+<body> 
+    <header></header>
+    
+    <section id='sec'>
+        <canvas id="idCanvas"></canvas>
+    </section>
+    <div id="placar"> Vidas: 10</div> 
+    <div id='controls'>
+        <div class="button-move" id="button-up" key="KeyW"></div>
+        <div class="button-move" id="button-right" key="KeyD"></div>
+        <div class="button-move" id="button-down" key="KeyS"></div>
+        <div class="button-move" id="button-left" key="KeyA"></div>
+    </div>
+    
+    <div id="shot" key="Space"></div>
+    <script src="_js/script.js"></script>      
+    <div id="end-screen" style="display:none">
+        <h1>pontuação</h1>
+        <p id="pontuacao"></p>
+        <button onclick="restart()">reinicar</button>
+    </div>
+</body> 
+</html>
