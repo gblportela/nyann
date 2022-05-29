@@ -32,7 +32,7 @@ if(!is_touch_device()){
 
 let pontuacao = 0
 var perdeu = 0;
-var vidas = 11;
+var vidas = 10;
 var v = false;
 var tocou = false;
 function getRandom(max, min) {
