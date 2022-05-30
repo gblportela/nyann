@@ -463,7 +463,7 @@ function makeBall(){
          let meteorArray = ['imagens/1.png','imagens/2.png','imagens/3.png','imagens/4.png','imagens/5.png','imagens/6.png','imagens/7.png','imagens/8.png','imagens/9.png','imagens/10.png','imagens/11.png','imagens/12.png','imagens/13.png','imagens/14.png','imagens/15.png'];
          var imgMeteor = new Image();
 
-         imgMeteor.src = meteorArray[getRandom(6, 0)]
+         imgMeteor.src = meteorArray[getRandom(14, 0)]
          ball.push(new Ball(x, y, dx, dy, imgMeteor));
       }
    }
